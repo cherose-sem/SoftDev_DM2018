@@ -1,8 +1,8 @@
 # SoftDev_DM2018
 _This repository serves as the compilation of all the assignments in Discrete Math._
 
-Assignment #1: [Logic]() <br>
-Assignment #2: [Programming with Predicates]() <br>
+Assignment #1: [Logic](https://github.com/cph-cs241/SoftDev_DM2018/tree/master/01%20Logic) <br>
+Assignment #2: [Programming with Predicates](https://github.com/cph-cs241/SoftDev_DM2018/tree/master/02%20Predicates) <br>
 
 -----
 > _Cherry Rose Semena_ <br>
