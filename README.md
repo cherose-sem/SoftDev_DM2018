@@ -7,4 +7,5 @@ Assignment #2: [Programming with Predicates](https://github.com/cph-cs241/SoftDe
 -----
 > _Cherry Rose Semena_ <br>
 > _Diana Strele_ <br>
-> _Mahnaz Karimi_
+> _Mahnaz Karimi_ <br>
+> _Mikkel Ziemer Jensen_
