@@ -56,10 +56,8 @@ classmates_with(X,Y) :-
 
 
 
-/*
-# 4. Does Mikkel study Discrete Mathematics with Andreas?
-# 5. Which room is Discrete Mathematics?
+/* 4. Does Mikkel study Discrete Mathematics with Andreas? */
 
-# classmates_with(diana):-
-#   studies(cherry, 'Large Systems Development'),
-#   studies(mahnaz, 'Large Systems Development'). */
+
+
+/* 5. Which room is Discrete Mathematics? */
