@@ -53,11 +53,18 @@ classmates_with(X,Y) :-
     format('~w ~w ~w ~w ~w ~n', [X, 'and', Y, 'are classmates in ', Z]).
 
 /* 3. Is Cherry in school on thursday? */
-
-
+in_school(X,Y) :-
+  studies(X,Z),
+  class(Z,Y),
+  format('~w ~w ~w ~w ~w ~n', [X, 'is in school on', Y, 'in class', Z]).
 
 /* 4. Does Mikkel study Discrete Mathematics with Andreas? */
-
-
+  study_with(X,Y,Z) :-
+    studies(X, Z),
+    studies(Y,Z),
+    format('~w ~w ~w ~w ~w ~n', [X, 'and', Y, 'are studying', Z]).
 
 /* 5. Which room is Discrete Mathematics? */
+  in_room(X) :-
+    room(Y,X),
+    format('~w ~w ~w ~n', [X, 'is in room', Y]).
