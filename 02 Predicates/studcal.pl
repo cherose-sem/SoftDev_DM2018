@@ -16,7 +16,7 @@ class('Large Systems Development').
 class('Systems Integration').
 class('Discrete Mathematics').
 
-/* rules */
+/* relations */
 studies(cherry, 'Discrete Mathematics').
 studies(cherry, 'Large Systems Development').
 studies(cherry, 'Systems Integration').
@@ -40,7 +40,7 @@ room(203,'System Integration').
 room(203,'Discrete Mathematics').
 room(205,'Internship Orientation').
 
-/* question/queries
+/* question/queries/set of rules
  1. Who are studying Discrete Mathematics? */
 dm_students :-
   listing(studies(X, 'Discrete Mathematics')),
