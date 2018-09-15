@@ -1,4 +1,4 @@
-package org.ziemer;
+package sets;
 
 public class Main {
 

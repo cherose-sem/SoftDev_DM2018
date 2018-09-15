@@ -1,4 +1,4 @@
-package org.ziemer;
+package sets;
 
 interface Set<T extends Comparable> {
     Boolean member(T member);

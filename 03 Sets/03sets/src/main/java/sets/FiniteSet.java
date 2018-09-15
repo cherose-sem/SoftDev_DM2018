@@ -1,4 +1,6 @@
-package org.ziemer;
+package sets;
+
+import sets.Set;
 
 public class FiniteSet<T extends Comparable> implements Set {
 
