@@ -21,10 +21,10 @@ public class Main {
 
         Sets unionedSet = intSet.union(secondSet);
 
-        unionedSet.printFormatted();
+        unionedSet.printFormatted("Union Set: ");
 
         Sets intersection = intSet.intersection(secondSet);
-        intersection.printFormatted();
+        intersection.printFormatted("Intersection Set: ");
 
         Set<Integer> thirdMembers = new HashSet<>();
         thirdMembers.add(1);
@@ -34,5 +34,11 @@ public class Main {
 
         Sets<Integer> thirdSet = new SetsImpl(thirdMembers);
         System.out.println(intSet.compareTo(thirdSet));
+        
+        intSet.printFormatted("Set A: ");
+        secondSet.printFormatted("Set B: ");
+        
+        Sets complementSet = intSet.complement(secondSet);
+        complementSet.printFormatted("Complement Set --> ");
     }
 }

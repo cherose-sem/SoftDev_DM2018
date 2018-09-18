@@ -57,7 +57,7 @@ public class SetsImpl<T extends Comparable> implements Sets {
     public Sets union(Sets set) {
         boolean noMax = this.noMax || !set.hasMax();
         boolean noMin = this.noMin || !set.hasMin();
-        Set<T> members = new HashSet<>();
+        Set<T> members = new HashSet();
         for (T m : this.members) {
             members.add(m);
         }
@@ -71,25 +71,28 @@ public class SetsImpl<T extends Comparable> implements Sets {
 
     @Override
     public Sets intersection(Sets set) {
-        Set<T> members = new HashSet<>();
+        Set<T> members = new HashSet();
         for (T m : this.members) {
             if (set.members().contains(m)) {
                 members.add(m);
             }
         }
-        return new SetsImpl<>(members);
+        return new SetsImpl(members);
     }
 
     @Override
     public Sets difference(Sets set) {
-        Set<T> members = new HashSet<>(this.members);
+        Set<T> members = new HashSet(this.members);
         members.removeAll(set.members());
-        return new SetsImpl<>(members);
+        return new SetsImpl(members);
     }
 
     @Override
-    public Sets complement() {
-        return null;
+    public Sets complement(Sets set) {
+        Set<T> members = new HashSet(this.members);
+        members.addAll(set.members());
+        members.removeAll(this.members());
+        return new SetsImpl(members);
     }
 
     @Override
@@ -114,14 +117,14 @@ public class SetsImpl<T extends Comparable> implements Sets {
     }
 
     @Override
-    public void printFormatted() {
-        System.out.print("{");
+    public void printFormatted(String s) {
+        System.out.print(s + "{");
         if (this.noMin) System.out.print("..., ");
         members.forEach(element -> {
             System.out.print(element + ", ");
         });
         if (this.noMax) System.out.print("...");
-        System.out.print("}");
+        System.out.print("} \n");
     }
 
     private boolean properSubSet(Sets<T> setB) {

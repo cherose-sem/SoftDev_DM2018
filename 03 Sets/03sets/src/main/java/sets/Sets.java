@@ -10,7 +10,7 @@ public interface Sets<T extends Comparable> {
     Sets<T> union(Sets<T> set);
     Sets<T> intersection(Sets<T> set);
     Sets<T> difference(Sets<T> set);
-    Sets<T> complement();
+    Sets<T> complement(Sets<T> set);
     int compareTo(Sets<T> set);
-    void printFormatted();
+    void printFormatted(String s);
 }
