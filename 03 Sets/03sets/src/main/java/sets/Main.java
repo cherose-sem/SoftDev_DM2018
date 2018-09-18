@@ -10,7 +10,7 @@ public class Main {
         members.add(1);
         members.add(2);
         members.add(3);
-        Sets intSet = new SetsImpl<Integer>(false, false,members);
+        Sets intSet = new SetsImpl<Integer>(false, false, members);
 
         Set<Integer> secondMembers = new HashSet<>();
         secondMembers.add(3);
@@ -34,11 +34,13 @@ public class Main {
 
         Sets<Integer> thirdSet = new SetsImpl(thirdMembers);
         System.out.println(intSet.compareTo(thirdSet));
-        
+
         intSet.printFormatted("Set A: ");
-        secondSet.printFormatted("Set B: ");
-        
+
+//        secondSet.printFormatted("Set B: ");
 //        Sets complementSet = intSet.complement(secondSet);
+
+        System.out.println("Set B: null");
         Sets complementSet = intSet.complement(null);
         complementSet.printFormatted("Complement Set --> ");
     }

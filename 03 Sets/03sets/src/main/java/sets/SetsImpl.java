@@ -98,7 +98,7 @@ public class SetsImpl<T extends Comparable> implements Sets {
             return new SetsImpl(noMin, noMax, members);
         } else {
             Set<String> univSet = new HashSet();
-            univSet.add("U\\A"); //Universal complement of the given set A
+            univSet.add("U\\A"); //Universal complement of the given set A {U\A}
             return new SetsImpl(univSet);
         }
     }
