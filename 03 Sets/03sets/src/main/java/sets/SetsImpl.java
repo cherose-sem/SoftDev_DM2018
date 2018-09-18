@@ -90,9 +90,17 @@ public class SetsImpl<T extends Comparable> implements Sets {
     @Override
     public Sets complement(Sets set) {
         Set<T> members = new HashSet(this.members);
-        members.addAll(set.members());
-        members.removeAll(this.members());
-        return new SetsImpl(members);
+        if (set != null) {
+            boolean noMax = this.noMax || !set.hasMax();
+            boolean noMin = this.noMin || !set.hasMin();
+            members.addAll(set.members());
+            members.removeAll(this.members());
+            return new SetsImpl(noMin, noMax, members);
+        } else {
+            Set<String> univSet = new HashSet();
+            univSet.add("U\\A"); //Universal complement of the given set A
+            return new SetsImpl(true, true, univSet);
+        }
     }
 
     @Override
@@ -119,11 +127,21 @@ public class SetsImpl<T extends Comparable> implements Sets {
     @Override
     public void printFormatted(String s) {
         System.out.print(s + "{");
-        if (this.noMin) System.out.print("..., ");
-        members.forEach(element -> {
-            System.out.print(element + ", ");
-        });
-        if (this.noMax) System.out.print("...");
+        if (this.noMin && this.noMax) {
+            System.out.print("INF");
+        } else {
+            if (this.noMin) {
+                System.out.print("INF, ");
+            }
+            members.forEach(element -> {
+                if (!element.equals("INF")) {
+                    System.out.print(element + ", ");
+                }
+            });
+            if (this.noMax) {
+                System.out.print("INF");
+            }
+        }
         System.out.print("} \n");
     }
 

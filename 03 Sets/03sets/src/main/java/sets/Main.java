@@ -39,6 +39,7 @@ public class Main {
         secondSet.printFormatted("Set B: ");
         
         Sets complementSet = intSet.complement(secondSet);
+//        Sets complementSet = intSet.complement(null);
         complementSet.printFormatted("Complement Set --> ");
     }
 }
