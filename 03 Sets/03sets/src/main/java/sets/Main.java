@@ -38,8 +38,8 @@ public class Main {
         intSet.printFormatted("Set A: ");
         secondSet.printFormatted("Set B: ");
         
-        Sets complementSet = intSet.complement(secondSet);
-//        Sets complementSet = intSet.complement(null);
+//        Sets complementSet = intSet.complement(secondSet);
+        Sets complementSet = intSet.complement(null);
         complementSet.printFormatted("Complement Set --> ");
     }
 }
