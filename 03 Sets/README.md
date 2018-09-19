@@ -19,6 +19,38 @@ This assignament is written in Java programming language using following librari
   - Set and HashSet
   - Magic
 
+### _Usage_
+--------------------------
+1. Clone project
+[https://github.com/cph-cs241/SoftDev_DM2018]()
+
+2. Open 
+```SoftDev_DM2018/03 Sets/03sets```
+
+3. Run _Main.java_ class
+
+Output:
+```java
+------------------------------------------------------------------------
+Building 03sets 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ 03sets ---
+Union Set: {INF, 1, 2, 3, 4, 5, } 
+Intersection Set: {3, } 
+-1
+Set A: {1, 2, 3, } 
+Set B: null
+Complement Set --> {U\A, } 
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 1.448s
+Finished at: Wed Sep 19 08:33:11 CEST 2018
+Final Memory: 5M/123M
+```
+
+
 ### _Structure_
 ------------------------
 ##### _Main.java_
@@ -69,34 +101,3 @@ public interface Sets<T extends Comparable> {
 ##### _SetsImpl.java_
 - Description and screenshots  
 ------------------------
-
-### _Usage_
-
-1. Clone project
-[https://github.com/cph-cs241/SoftDev_DM2018]()
-
-2. Open 
-```SoftDev_DM2018/03 Sets/03sets```
-
-3. Run _Main.java_ class
-
-Output:
-```java
-------------------------------------------------------------------------
-Building 03sets 1.0-SNAPSHOT
-------------------------------------------------------------------------
-
---- exec-maven-plugin:1.2.1:exec (default-cli) @ 03sets ---
-Union Set: {INF, 1, 2, 3, 4, 5, } 
-Intersection Set: {3, } 
--1
-Set A: {1, 2, 3, } 
-Set B: null
-Complement Set --> {U\A, } 
-------------------------------------------------------------------------
-BUILD SUCCESS
-------------------------------------------------------------------------
-Total time: 1.448s
-Finished at: Wed Sep 19 08:33:11 CEST 2018
-Final Memory: 5M/123M
-```
