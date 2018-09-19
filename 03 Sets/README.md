@@ -38,6 +38,7 @@ Building 03sets 1.0-SNAPSHOT
 --- exec-maven-plugin:1.2.1:exec (default-cli) @ 03sets ---
 Union Set: {INF, 1, 2, 3, 4, 5, } 
 Intersection Set: {3, } 
+Difference set: {1, 2, } 
 -1
 Set A: {1, 2, 3, } 
 Set B: null
@@ -54,7 +55,7 @@ Final Memory: 5M/123M
 ### _Structure_
 ------------------------
 ##### _Main.java_
-
+The sets are hard coded. The aprouch, which is used to create the sets, is defining a set and then add integer numbers as set's member. This structure is implemented in "Main" class.
   - Adds Integers to `members`, `secondMembers` and `thirdMembers` Set
   - Runs `union` method on both Sets.
 
@@ -64,7 +65,12 @@ Union Set: {INF, 1, 2, 3, 4, 5, }
   - Runs `intersection` method on both Sets.
 
 ```Java
+
 Intersection Set: {3, }
+
+ - Runs `Difference` method on both Sets.
+```Java
+Difference set: {1, 2, } 
 ```
   - Runs `compareTo` method on `members` and `thirdMembers` Set.
 
@@ -82,6 +88,9 @@ Complement Set --> {U\A, }
 ##### _Sets.java_
 
   - Interface class that is implemented by `SetsImpl.java` class with the stated methods.
+  I interface class there are some methods with different output.
+  All methods work on Sets but the last method "printFormat" has used to display the method outputs.
+
 ```Java
 public interface Sets<T extends Comparable> {
     Set<T> members();
@@ -101,3 +110,4 @@ public interface Sets<T extends Comparable> {
 ##### _SetsImpl.java_
 - Description and screenshots  
 ------------------------
+![image](https://user-images.githubusercontent.com/16150075/45599320-9c8ffa00-b9e9-11e8-8fc8-cbcfeef17256.png)
