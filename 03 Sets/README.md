@@ -22,6 +22,7 @@ This assignament is written in Java programming language using following librari
 ### _Structure_
 ------------------------
 ##### _Main.java_
+
   - Adds Integers to `members`, `secondMembers` and `thirdMembers` Set
   - Runs `union` method on both Sets
 Output:
@@ -47,7 +48,22 @@ Complement Set --> {U\A, }
 
 ------------------------
 ##### _Sets.java_
-- Description and screenshots 
+
+  - Interface class that is implemented by `SetsImpl.java` class the stated methods.
+```Java
+public interface Sets<T extends Comparable> {
+    Set<T> members();
+    boolean hasMin();
+    boolean hasMax();
+    boolean member(T member);
+    Sets<T> union(Sets<T> set);
+    Sets<T> intersection(Sets<T> set);
+    Sets<T> difference(Sets<T> set);
+    Sets<T> complement(Sets<T> set);
+    int compareTo(Sets<T> set);
+    void printFormatted(String s);
+}
+``` 
 
 ------------------------
 ##### _SetsImpl.java_
