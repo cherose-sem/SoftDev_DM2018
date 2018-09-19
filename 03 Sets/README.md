@@ -24,24 +24,24 @@ This assignament is written in Java programming language using following librari
 ##### _Main.java_
 
   - Adds Integers to `members`, `secondMembers` and `thirdMembers` Set
-  - Runs `union` method on both Sets
-Output:
+  - Runs `union` method on both Sets.
+
 ```Java
 Union Set: {INF, 1, 2, 3, 4, 5, }
 ```
-  - Runs `intersection` method on both Sets
-Output:
+  - Runs `intersection` method on both Sets.
+
 ```Java
 Intersection Set: {3, }
 ```
-  - Runs `compareTo` method on `members` and `thirdMembers` Set
-Output:
+  - Runs `compareTo` method on `members` and `thirdMembers` Set.
+
 ```Java
 -1
 Set A: {1, 2, 3, }
 ```
-  - Runs `compliment` method on all sets returning universal compliment of the Set `A`
-Output:
+  - Runs `compliment` method on all sets returning universal compliment of the Set `A`.
+  
 ```Java
 Complement Set --> {U\A, }
 ```
@@ -49,7 +49,7 @@ Complement Set --> {U\A, }
 ------------------------
 ##### _Sets.java_
 
-  - Interface class that is implemented by `SetsImpl.java` class the stated methods.
+  - Interface class that is implemented by `SetsImpl.java` class with the stated methods.
 ```Java
 public interface Sets<T extends Comparable> {
     Set<T> members();
