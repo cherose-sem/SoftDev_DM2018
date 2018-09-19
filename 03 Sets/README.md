@@ -108,6 +108,8 @@ public interface Sets<T extends Comparable> {
 
 ------------------------
 ##### _SetsImpl.java_
-- Description and screenshots  
-------------------------
-![image](https://user-images.githubusercontent.com/16150075/45599320-9c8ffa00-b9e9-11e8-8fc8-cbcfeef17256.png)
+- Description and screenshots 
+"SetsImpl" is a class including 3 variable. 2 constructors are defined for this class, which the first one takes one variable as "Set<T>" and the second takes 3 variable contain 2 "Boolian" and one "Set<T>". In continuous, just the second constructor has used.  
+![image](https://user-images.githubusercontent.com/20173643/45787150-0de2dd80-bc74-11e8-82ee-87183cca0cc3.PNG)
+
+
