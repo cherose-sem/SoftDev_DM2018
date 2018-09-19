@@ -11,7 +11,7 @@ II. Methods for handling subsets and equality: <br>
 ![image](https://user-images.githubusercontent.com/16150075/45599320-9c8ffa00-b9e9-11e8-8fc8-cbcfeef17256.png)
 
 
-# _SOLUTION_:
+# _SOLUTION:_
 
 This assignament is written in Java programming language using following libraries to acheave the requirements:
 
@@ -20,19 +20,39 @@ This assignament is written in Java programming language using following librari
   - Magic
 
 ### _Structure_
+------------------------
+##### _Main.java_
+  - Adds Integers to `members`, `secondMembers` and `thirdMembers` Set
+  - Runs `union` method on both Sets
+Output:
+```Java
+Union Set: {INF, 1, 2, 3, 4, 5, }
+```
+  - Runs `intersection` method on both Sets
+Output:
+```Java
+Intersection Set: {3, }
+```
+  - Runs `compareTo` method on `members` and `thirdMembers` Set
+Output:
+```Java
+-1
+Set A: {1, 2, 3, }
+```
+  - Runs `compliment` method on all sets returning universal compliment of the Set `A`
+Output:
+```Java
+Complement Set --> {U\A, }
+```
 
-  - Main.java 
-  - Sets.java
-  - SetsImpl.java
-
-_Main.java_
-  - Description and screenshots 
-
-_Sets.java_
+------------------------
+##### _Sets.java_
 - Description and screenshots 
 
-_SetsImpl.java_
-- Description and screenshots 
+------------------------
+##### _SetsImpl.java_
+- Description and screenshots  
+------------------------
 
 ### _Usage_
 
