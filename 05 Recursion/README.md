@@ -25,3 +25,9 @@ public static void move(int count, Tower beg, Tower aux, Tower end) throws Inter
 ```
 
 This method basically do the job, which takes the number of disks - `count`, and the three towers - `beg`-begin, `aux`- auxiliary and `end`-final.
+
+**Output**
+> Given: 8 disks and 3 towers
+
+![image](https://user-images.githubusercontent.com/16150075/48583883-9efacb80-e928-11e8-8a2a-d37efe2585ac.png)
+
