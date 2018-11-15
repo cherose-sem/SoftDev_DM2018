@@ -18,16 +18,6 @@ public class Tower {
 
         return true;
     }
-    public boolean moveToRec(Tower other){
-        if(disks.isEmpty()) return false;
-        if(!other.disks.isEmpty() &&
-                this.disks.peek().getSize() > other.disks.peek().getSize())
-            return false;
-        other.disks.push(this.disks.pop());
-        System.out.println("here:" + other.disks.size());
-        moveToRec(other);
-        return true;
-    }
 
     public String text(int height){
         if (height >= disks.size()) return "            |            ";
