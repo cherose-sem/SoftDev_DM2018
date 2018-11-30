@@ -28,7 +28,7 @@ public class Main {
 
     public static void main(String... args) {
 
-        System.out.println("\n\n FINITE STATE GENERATOR");
+        System.out.println("\n\n FINITE STATE AUTOMATON");
         IAutomaton automaton = new FSAutomatonImpl();
         automaton.setActions("A", "B", "C", "D");
 
