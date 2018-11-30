@@ -60,18 +60,18 @@ public class StateImpl implements IState {
         }
     }
 
-//    private final int index;
-//    private final boolean isFinal;
+    private final int index;
+    private final boolean isFinal;
+    
+    public StateImpl(int index, boolean isFinal) {
+        this.index = index;
+        this.isFinal = isFinal;
+    }
 
-//    public StateImpl(int index, boolean isFinal) {
-//        this.index = index;
-//        this.isFinal = isFinal;
-//    }
-
-//    @Override
-//    public int getIndex() {
-//        return index;
-//    }
+    @Override
+    public int getIndex() {
+        return index;
+    }
     
         
     @Override

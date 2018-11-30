@@ -10,7 +10,8 @@ public interface IState {
     enum Symbol {
         A, B, C, D;
     }
-
+    State symbolToState(Symbol sym);
     State getState();
     boolean isFinal();
+    int getIndex();
 }
